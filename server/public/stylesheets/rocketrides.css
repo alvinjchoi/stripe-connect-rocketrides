@@ -113,13 +113,15 @@ a.arrow {
 }
 #top a.rocketrides {
   display: inline-block;
-  min-width: 215px;
-  height: 20px;
+  min-width: 300px;
+  height: 50px;
+  margin-top: 20px;
   padding-left: 75px;
-  background: url(/images/rocketrides.svg) left center no-repeat;
+  background: url(/images/orderspot.svg) left center no-repeat;
 }
 
 #top .links a {
+  color: #292f45;
   margin-left: 30px;
   font-size: 18px;
 }
@@ -486,7 +488,7 @@ input[type='submit'].primary {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: #15b67c;
+  background: #52d2bc;
   color: white;
   height: 44px;
   margin: 30px 0 0 0;
@@ -596,6 +598,7 @@ form a.button {
 }
 
 .intro h1 {
+  color: #05265d;
   font-family: 'Barlow';
   font-weight: 500;
   font-size: 42px;
@@ -604,7 +607,7 @@ form a.button {
 }
 
 .intro h2 {
-  color: #cfd7df;
+  color: #05265d;
   margin: 15px 0;
   font-size: 20px;
   font-weight: 400;

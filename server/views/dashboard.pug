@@ -4,14 +4,14 @@ block header
   if showBanner
     .banner
       .message
-        strong Congratulations, your account is set up. 
+        strong Congratulations, your account is set up.
         span.secondary-text Fire up your rocket and take your first passengers.
 block content
   .dashboard
     .user
       .block.profile
         .photo
-        p Pilot since #{moment(pilot.created).format('MMM YYYY')}
+        p Partner since #{moment(pilot.created).format('MMM YYYY')}
         h1 #{pilot.displayName()}
         h2
           a(href='/pilots/stripe/dashboard?account=true') View Stripe account
@@ -30,12 +30,12 @@ block content
         p
           a(href='/pilots/stripe/dashboard') View payouts on Stripe
     section.rides
-      h4 Recent rides
+      h4 Recent orders
       if rides.length == 0
         .no-rides
           .rocket
-          h1 No rides to display yet
-          h2 Fly with some passengers!
+          h1 No orders to display yet
+          h2 Start taking orders from your customers!
       else
         .list
           each ride in rides
@@ -46,7 +46,7 @@ block content
 
 block footer
   .annotation.card.dashboard-banner(class=(showBanner ? '' : 'hidden'))
-    h4 The Connect Express onboarding flow is now complete. 
+    h4 The Connect Express onboarding flow is now complete.
       a.show-more(href="#") &nbsp;(show more)
     .description
       p Express includes the #[strong Stripe account ID] that was just created, so after the flow redirects to Rocket Rides we can save it to the database.

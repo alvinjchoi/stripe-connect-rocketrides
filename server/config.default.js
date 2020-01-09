@@ -2,7 +2,7 @@
 
 module.exports = {
   // App name
-  appName: 'Rocket Rides',
+  appName: 'Orderspot Partner Dashboard',
 
   // Public domain of Rocket Rides
   publicDomain: 'http://localhost:3000',
